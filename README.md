@@ -6,7 +6,7 @@ Project-based tmux setup with session-per-project workflow. Works on macOS and L
 
 ```bash
 # Clone to the XDG config location
-git clone <your-repo-url> ~/.config/tmux
+git clone https://github.com/maths-lover/tmux_conf ~/.config/tmux
 
 # Run setup (installs TPM, links sessionizer)
 ~/.config/tmux/setup.sh
