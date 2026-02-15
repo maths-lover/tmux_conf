@@ -3,10 +3,17 @@
 # Fuzzy-find a project directory and create/switch to a tmux session for it.
 # Usage: tmux-sessionizer [directory]
 
+SEARCH_ROOT="$HOME/Develop"
+
 if [[ $# -eq 1 ]]; then
     selected=$1
 else
-    selected=$(find ~/Develop -mindepth 1 -maxdepth 1 -type d | fzf)
+    selected=$(find "$SEARCH_ROOT" -type d -name .git -prune \
+        | sed 's|/\.git$||' \
+        | sed "s|^$SEARCH_ROOT/||" \
+        | sort \
+        | fzf --prompt="project> ")
+    [[ -n $selected ]] && selected="$SEARCH_ROOT/$selected"
 fi
 
 if [[ -z $selected ]]; then
