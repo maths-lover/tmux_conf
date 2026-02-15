@@ -86,7 +86,7 @@ Managed by [TPM](https://github.com/tmux-plugins/tpm):
 
 - **tmux-sensible** — sensible default settings
 - **tmux-yank** — cross-platform clipboard support (pbcopy/xclip/wl-copy)
-- **catppuccin/tmux** — status bar theme (mocha variant)
+- **rose-pine/tmux** — status bar theme (main variant)
 
 ## Repo structure
 
