@@ -20,7 +20,7 @@ After setup, open tmux and press `prefix + I` to install plugins.
 
 The core idea: **one tmux session per project**.
 
-- `prefix + f` — opens fzf with directories under `~/Developer/`. Pick one and a session is created (or switched to if it exists). The session is named after the directory.
+- `prefix + f` — opens fzf with git project directories under `~/Develop/`. Pick one and a session is created (or switched to if it exists). The session is named after the directory.
 - `prefix + s` — list all sessions. Use this to jump between projects.
 - `prefix + S` — create a named session manually.
 - `prefix + d` — detach from current session (session stays alive in background).
@@ -80,13 +80,17 @@ Prefix is `Ctrl-b` (default).
 | `prefix + I` | Install TPM plugins |
 | `prefix + U` | Update TPM plugins |
 
+## Status bar
+
+Minimal rose-pine themed bar: **session name** (left) + **window list** (center). No date/time, directory, host, or git branch.
+
 ## Plugins
 
 Managed by [TPM](https://github.com/tmux-plugins/tpm):
 
 - **tmux-sensible** — sensible default settings
 - **tmux-yank** — cross-platform clipboard support (pbcopy/xclip/wl-copy)
-- **rose-pine/tmux** — status bar theme (main variant)
+- **rose-pine/tmux** — status bar theme (main variant, no date/time)
 
 ## Repo structure
 
